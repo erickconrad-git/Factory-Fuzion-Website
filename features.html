@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Factory Fuzion | Industrial Intelligence</title>
+        <title>Factory Fuzion | Cisco Partner</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
         <style>
@@ -73,9 +73,16 @@
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1e232d; border-bottom: 3px solid #ff8c00;">
             <div class="container">
                 <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-                    <img src="assets/logo.png" alt="Factory Fuzion" height="60" class="me-3" onerror="this.style.display='none'">
-                    <span class="d-none d-lg-block">Factory Fuzion</span>
+                    
+                    <img src="assets/logo.png" alt="Factory Fuzion" style="height: 50px; width: auto;" onerror="this.style.display='none'">
+                    <span class="d-none d-lg-block ms-2">Factory Fuzion</span>
+
+                    <div class="mx-3" style="border-left: 1px solid rgba(255,255,255,0.3); height: 35px;"></div>
+
+                    <img src="assets/ciscologo.png" alt="Cisco Partner" style="height: 50px; width: auto;">
+                
                 </a>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -91,17 +98,20 @@
         
         <div class="container py-5">
             <h2 class="text-center mb-5 display-5 fw-bold">The Core Technology Stack</h2>
+            <div class="text-center mb-5">
+                <span class="badge bg-light text-dark">Engineered with Cisco Industrial Technology</span>
+            </div>
             
             <h3 class="section-label">1. The Architecture</h3>
             <div class="row g-4 mb-5">
                 <div class="col-md-6">
                     <div class="p-4 h-100 arch-banner connect">
                         <div class="d-flex align-items-center mb-3">
-                             <i class="bi bi-cloud-check display-4 text-info me-3"></i>
-                             <h4 class="mb-0">Cloud-Ready Connectivity</h4>
+                             <i class="bi bi-ethernet display-4 text-info me-3"></i>
+                             <h4 class="mb-0">Universal Connectivity</h4>
                         </div>
-                        <p class="text-light"><strong>"Plug & Play for the AI Edge"</strong></p>
-                        <p class="text-secondary small mb-0">Our architecture is designed to support high-velocity data ingress. Whether plugging in a legacy PLC or a modern AI Edge Gateway, the network dynamically segments the traffic, ensuring a clean, secure pipeline to your Cloud Data Lake.</p>
+                        <p class="text-light"><strong>"Plug & Play Security"</strong></p>
+                        <p class="text-secondary small mb-0">Our dynamic architecture decouples security from the physical port. You can plug a robot, camera, or sensor into <em>any</em> port, and the network will automatically identify it and apply the correct security policy.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -111,7 +121,7 @@
                              <h4 class="mb-0">Security Standard Alignment</h4>
                         </div>
                         <p class="text-light"><strong>IEC 62443 Compliance</strong></p>
-                        <p class="text-secondary small mb-0">We allow you to innovate safely. By enforcing Zones and Conduits aligned with IEC 62443, we ensure that experimental AI pilots in the cloud cannot accidentally disrupt critical safety systems on the plant floor.</p>
+                        <p class="text-secondary small mb-0">We built this platform to actively support the IEC 62443 international standard. By enforcing Zones and Conduits, we ensure that your facility meets global cybersecurity benchmarks from day one.</p>
                     </div>
                 </div>
             </div>
@@ -123,22 +133,22 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center mb-3">
                                 <i class="bi bi-hdd-network tech-icon me-3 mb-0"></i>
-                                <h3 class="card-title mb-0">AI-Grade Infrastructure</h3>
+                                <h3 class="card-title mb-0">Intelligent Rugged Switching</h3>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
                                     <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>10Gb AI Backhaul:</strong> Massive uplink capacity for Computer Vision.</li>
+                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>AI-Ready 10Gb Bandwidth:</strong> High-speed uplinks for Computer Vision.</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4">
                                     <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Edge Compute Ready:</strong> Ports optimized for GPU Gateways.</li>
+                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>10x Speed Upgrade:</strong> Replaces 100Mb ports with full Gigabit downlinks.</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4">
                                     <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Ruggedized:</strong> Taking Data Center speeds to the factory floor.</li>
+                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Ruggedized:</strong> Built for dust, heat, and vibration.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -154,10 +164,10 @@
                         <div class="card-body">
                             <i class="bi bi-shield-check tech-icon"></i>
                             <h4 class="card-title">Unified Identity</h4>
-                            <p class="small text-muted mb-3">Zero-Trust Access</p>
+                            <p class="small text-muted mb-3">Access Control</p>
                             <ul class="list-unstyled small">
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Automated Quarantine:</strong> Unknown devices are isolated instantly.</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Human-in-the-Loop:</strong> Secure approval workflows.</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Zero-Trust Onboarding:</strong> Instant quarantine for new devices.</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Human-in-the-Loop:</strong> Manual approval for production access.</li>
                             </ul>
                         </div>
                     </div>
@@ -166,11 +176,11 @@
                     <div class="card card-dark h-100 p-4">
                         <div class="card-body">
                             <i class="bi bi-eye tech-icon"></i>
-                            <h4 class="card-title">Data Contextualization</h4>
-                            <p class="small text-muted mb-3">Deep Packet Inspection</p>
+                            <h4 class="card-title">Packet Inspection</h4>
+                            <p class="small text-muted mb-3">Deep Visibility</p>
                             <ul class="list-unstyled small">
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Protocol Decoding:</strong> Translates raw PLC traffic.</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Clean Data for AI:</strong> Verified asset data only.</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Protocol Decoding:</strong> Reads Modbus, CIP, and Profinet.</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Baseline Enforcement:</strong> Alerts on "Golden State" changes.</li>
                             </ul>
                         </div>
                     </div>
@@ -179,11 +189,11 @@
                     <div class="card card-dark h-100 p-4">
                         <div class="card-body">
                             <i class="bi bi-cpu tech-icon"></i>
-                            <h4 class="card-title">AIOps Assurance</h4>
-                            <p class="small text-muted mb-3">Network Self-Healing</p>
+                            <h4 class="card-title">Network Assurance</h4>
+                            <p class="small text-muted mb-3">Reliability</p>
                             <ul class="list-unstyled small">
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Predictive Health:</strong> Predicts cable failures early.</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Golden Config:</strong> Automated drift correction.</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>AI-Driven Wired Health:</strong> Detects CRC errors early.</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Automated Config:</strong> Eliminates drift.</li>
                             </ul>
                         </div>
                     </div>
@@ -192,11 +202,11 @@
                     <div class="card card-dark h-100 p-4">
                         <div class="card-body">
                             <i class="bi bi-door-closed tech-icon"></i>
-                            <h4 class="card-title">Cloud-Native Access</h4>
-                            <p class="small text-muted mb-3">Secure Vendor Support</p>
+                            <h4 class="card-title">Vendor Access</h4>
+                            <p class="small text-muted mb-3">Secure Remote Support</p>
                             <ul class="list-unstyled small">
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Browser-Based:</strong> No VPN clients required.</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Session Recording:</strong> Full audit trails.</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Clientless ZTNA:</strong> Browser-based (no VPNs).</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Full Audit:</strong> Session recording.</li>
                             </ul>
                         </div>
                     </div>
@@ -205,11 +215,11 @@
                     <div class="card card-dark h-100 p-4">
                         <div class="card-body">
                             <i class="bi bi-cloud-arrow-up tech-icon"></i>
-                            <h4 class="card-title">Cloud Fleet Ops</h4>
-                            <p class="small text-muted mb-3">Edge Management</p>
+                            <h4 class="card-title">Edge Management</h4>
+                            <p class="small text-muted mb-3">Fleet Operations</p>
                             <ul class="list-unstyled small">
                                 <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Zero-Touch:</strong> Ship & click deployment.</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Global Updates:</strong> Instant security patching.</li>
+                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Fleet Updates:</strong> Global firmware patching.</li>
                             </ul>
                         </div>
                     </div>
@@ -238,13 +248,19 @@
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-md-8">
-                    <h5 class="fw-bold mb-3">Ready to modernize your infrastructure?</h5>
+                    <h5 class="fw-bold mb-3">Align your Security and Operations teams.</h5>
                     <a href="contact.html" class="btn btn-outline-light btn-sm">Start the Assessment</a>
                 </div>
             </div>
             <hr class="border-secondary" />
+            
+            <div class="d-flex justify-content-center align-items-center mb-3">
+                <span class="fw-bold me-3">Factory Fuzion</span>
+                <span class="mx-2 text-secondary">|</span>
+                <img src="assets/ciscologo.png" alt="Cisco Partner" style="height: 40px; width: auto;">
+            </div>
+            
             <p class="mb-0 text-secondary">&copy; 2026 Factory Fuzion. Built for Industrial Intelligence.</p>
-            <small class="text-muted">Site Version: v6.0 (Generated 2026-01-19 19:13)</small>
         </div>
     </footer>
     
