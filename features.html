@@ -1,270 +1,207 @@
-
-    <!DOCTYPE html>
-    <html lang="en">
-    
+<!DOCTYPE html><html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Factory Fuzion | Cisco Partner</title>
+        <title>Factory Fuzion | Cisco Powered</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
         <style>
             body { background-color: #1e232d; color: #ffffff; display: flex; flex-direction: column; min-height: 100vh; }
             .btn-accent { background-color: #ff8c00; color: white; border: none; font-weight: bold; padding: 12px 30px; border-radius: 4px; }
             .btn-accent:hover { background-color: #e07b00; color: white; }
-            
             .card-dark { background-color: #2c3440; border: 1px solid #444; color: white; transition: transform 0.2s; }
             .card-dark:hover { transform: translateY(-5px); border-color: #ff8c00; }
-            .tech-icon { font-size: 2rem; color: #ff8c00; margin-bottom: 15px; }
-            
-            /* Homepage Specific Styles */
             .hero-section {
-                background: linear-gradient(rgba(30,35,45,0.95), rgba(30,35,45,0.8)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000');
+                background: linear-gradient(rgba(30,35,45,0.95), rgba(30,35,45,0.85)), url('https://images.unsplash.com/photo-1565514020125-2716382ae867?q=80&w=1000');
                 background-size: cover;
                 background-position: center;
-                padding: 100px 0;
+                padding: 120px 0;
             }
-            
-            .process-step {
-                position: relative;
-                padding: 20px;
-                border-left: 4px solid #444;
-                transition: all 0.3s;
+            .feature-icon-box {
+                width: 60px; height: 60px;
+                display: flex; align-items: center; justify-content: center;
+                border-radius: 12px; margin-bottom: 20px;
             }
-            .process-step:hover {
-                border-left-color: #ff8c00;
-                background-color: #2c3440;
-            }
-            .step-number {
-                font-size: 3rem;
-                font-weight: bold;
-                color: rgba(255, 255, 255, 0.1);
-                position: absolute;
-                top: 0;
-                right: 20px;
-            }
-
-            .bridge-graphic {
-                border: 2px dashed #555;
-                border-radius: 10px;
-                padding: 30px;
-                margin: 40px 0;
-                background: rgba(0,0,0,0.2);
-            }
-            
-            .section-label { 
-                border-left: 5px solid #ff8c00; padding-left: 15px; margin-bottom: 20px; color: #fff;
-            }
-            .arch-banner {
-                background: linear-gradient(45deg, #2c3440, #1e232d);
-                border: 1px solid #444;
-                border-radius: 8px;
-            }
-            .arch-banner.security { border-color: #ff8c00; }
-            .arch-banner.connect { border-color: #0dcaf0; }
-
+            .tech-pill { background-color: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; margin-right: 5px; margin-bottom: 5px; display: inline-block; }
+            .layer-number { font-size: 5rem; font-weight: 900; opacity: 0.1; line-height: 1; position: absolute; top: -20px; left: 10px; }
+            .list-check li { margin-bottom: 12px; display: flex; align-items: flex-start; }
+            .list-check i { margin-right: 10px; margin-top: 4px; }
             .navbar-brand img { transition: transform 0.3s; }
             .navbar-brand:hover img { transform: scale(1.05); }
+            .vr-custom { width: 2px; background-color: #444; height: 100%; margin: 0 auto; display: none; }
+            @media (min-width: 768px) { .vr-custom { display: block; } }
         </style>
     </head>
-    
     <body>
-        
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1e232d; border-bottom: 3px solid #ff8c00;">
             <div class="container">
                 <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-                    
                     <img src="assets/logo.png" alt="Factory Fuzion" style="height: 50px; width: auto;" onerror="this.style.display='none'">
                     <span class="d-none d-lg-block ms-2">Factory Fuzion</span>
-
                     <div class="mx-3" style="border-left: 1px solid rgba(255,255,255,0.3); height: 35px;"></div>
-
                     <img src="assets/ciscologo.png" alt="Cisco Partner" style="height: 50px; width: auto;">
-                
                 </a>
-                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="features.html">Platform Features</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="features.html">Platform</a></li>
+                        <li class="nav-item"><a class="nav-link " href="pricing.html">Service Tiers</a></li>
                         <li class="nav-item"><a class="nav-link " href="contact.html">Assessment</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         
-        <div class="container py-5">
-            <h2 class="text-center mb-5 display-5 fw-bold">The Core Technology Stack</h2>
-            <div class="text-center mb-5">
-                <span class="badge bg-light text-dark">Engineered with Cisco Industrial Technology</span>
-            </div>
-            
-            <h3 class="section-label">1. The Architecture</h3>
-            <div class="row g-4 mb-5">
-                <div class="col-md-6">
-                    <div class="p-4 h-100 arch-banner connect">
-                        <div class="d-flex align-items-center mb-3">
-                             <i class="bi bi-ethernet display-4 text-info me-3"></i>
-                             <h4 class="mb-0">Universal Connectivity</h4>
-                        </div>
-                        <p class="text-light"><strong>"Plug & Play Security"</strong></p>
-                        <p class="text-secondary small mb-0">Our dynamic architecture decouples security from the physical port. You can plug a robot, camera, or sensor into <em>any</em> port, and the network will automatically identify it and apply the correct security policy.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 h-100 arch-banner security">
-                        <div class="d-flex align-items-center mb-3">
-                             <i class="bi bi-shield-lock display-4 text-warning me-3"></i>
-                             <h4 class="mb-0">Security Standard Alignment</h4>
-                        </div>
-                        <p class="text-light"><strong>IEC 62443 Compliance</strong></p>
-                        <p class="text-secondary small mb-0">We built this platform to actively support the IEC 62443 international standard. By enforcing Zones and Conduits, we ensure that your facility meets global cybersecurity benchmarks from day one.</p>
-                    </div>
-                </div>
-            </div>
+        
+        <div class="container py-5 text-center">
+            <h1 class="display-4 fw-bold mb-3">The Anatomy of a Secure Factory</h1>
+            <p class="lead text-secondary mx-auto" style="max-width: 800px;">We don't just sell software or hardware. We deliver a vertically integrated stack designed to survive the plant floor while satisfying the boardroom.</p>
+        </div>
 
-            <h3 class="section-label">2. The Hardware Layer</h3>
-            <div class="row mb-5">
-                <div class="col-md-12">
-                    <div class="card card-dark h-100 p-4 border-warning">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="bi bi-hdd-network tech-icon me-3 mb-0"></i>
-                                <h3 class="card-title mb-0">Intelligent Rugged Switching</h3>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>AI-Ready 10Gb Bandwidth:</strong> High-speed uplinks for Computer Vision.</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4">
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>10x Speed Upgrade:</strong> Replaces 100Mb ports with full Gigabit downlinks.</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4">
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Ruggedized:</strong> Built for dust, heat, and vibration.</li>
-                                    </ul>
-                                </div>
+        <div class="py-5" style="background-color: #151920; border-top: 1px solid #333;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="position-relative p-4">
+                            <span class="layer-number">01</span>
+                            <div class="feature-icon-box bg-warning bg-opacity-10"><i class="bi bi-box-seam fs-2 text-warning"></i></div>
+                            <h2 class="fw-bold text-white">The Rugged Network</h2>
+                            <h5 class="text-warning mb-3">Physical Infrastructure & Switching</h5>
+                            <p class="text-light" style="opacity: 0.9;">The foundation of the network must be as tough as the machines it connects. We replace fragile office gear with hardened industrial equipment.</p>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-warning me-3"></i> <div class="text-light"><strong>Turnkey Enclosures:</strong> Pre-wired NEMA cabinets with DIN-rail mounting, power conditioning, and fiber termination.</div></li>
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-warning me-3"></i> <div class="text-light"><strong>High-Power PoE:</strong> 90W (4PPoE) per port to drive power-hungry Edge AI devices, computer vision cameras, and high-performance wireless APs without auxiliary power.</div></li>
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-warning me-3"></i> <div class="text-light"><strong>Rapid Recovery Architecture:</strong> Dual-homed uplinks eliminate single points of failure. We utilize <strong>local SD card backups</strong> for instant "Swap-and-Boot" replacement—no laptop or IT support required to restore a failed switch.</div></li>
+                            </ul>
+                            <div class="mt-4">
+                                <span class="tech-pill">Industrial Switches</span>
+                                <span class="tech-pill">NEMA Enclosures</span>
+                                <span class="tech-pill">Ruggedized Cabling</span>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <h3 class="section-label">3. The Intelligence Layer</h3>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-dark h-100 p-4">
-                        <div class="card-body">
-                            <i class="bi bi-shield-check tech-icon"></i>
-                            <h4 class="card-title">Unified Identity</h4>
-                            <p class="small text-muted mb-3">Access Control</p>
-                            <ul class="list-unstyled small">
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Zero-Trust Onboarding:</strong> Instant quarantine for new devices.</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Human-in-the-Loop:</strong> Manual approval for production access.</li>
-                            </ul>
+                    <div class="col-lg-6">
+                        <div class="card card-dark border-warning p-1 overflow-hidden" style="height: 350px;">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" alt="Industrial Enclosure" style="object-fit: cover; height: 100%; width: 100%; opacity: 0.9;">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-dark h-100 p-4">
-                        <div class="card-body">
-                            <i class="bi bi-eye tech-icon"></i>
-                            <h4 class="card-title">Packet Inspection</h4>
-                            <p class="small text-muted mb-3">Deep Visibility</p>
-                            <ul class="list-unstyled small">
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Protocol Decoding:</strong> Reads Modbus, CIP, and Profinet.</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Baseline Enforcement:</strong> Alerts on "Golden State" changes.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-dark h-100 p-4">
-                        <div class="card-body">
-                            <i class="bi bi-cpu tech-icon"></i>
-                            <h4 class="card-title">Network Assurance</h4>
-                            <p class="small text-muted mb-3">Reliability</p>
-                            <ul class="list-unstyled small">
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>AI-Driven Wired Health:</strong> Detects CRC errors early.</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Automated Config:</strong> Eliminates drift.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-dark h-100 p-4">
-                        <div class="card-body">
-                            <i class="bi bi-door-closed tech-icon"></i>
-                            <h4 class="card-title">Vendor Access</h4>
-                            <p class="small text-muted mb-3">Secure Remote Support</p>
-                            <ul class="list-unstyled small">
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Clientless ZTNA:</strong> Browser-based (no VPNs).</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Full Audit:</strong> Session recording.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-dark h-100 p-4">
-                        <div class="card-body">
-                            <i class="bi bi-cloud-arrow-up tech-icon"></i>
-                            <h4 class="card-title">Edge Management</h4>
-                            <p class="small text-muted mb-3">Fleet Operations</p>
-                            <ul class="list-unstyled small">
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Zero-Touch:</strong> Ship & click deployment.</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Fleet Updates:</strong> Global firmware patching.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-dark h-100 p-4 border-info">
-                        <div class="card-body">
-                            <i class="bi bi-graph-up-arrow tech-icon"></i>
-                            <h4 class="card-title">Behavioral AI Defense</h4>
-                            <p class="small text-muted mb-3">Traffic Anomaly Detection</p>
-                            <ul class="list-unstyled small">
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Threat ML:</strong> Detects "Low and Slow" data exfiltration.</li>
-                                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i><strong>Encrypted Analysis:</strong> Spots malware without decryption.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-5">
-                <a href="contact.html" class="btn btn-accent btn-lg">Request a Demo of the Stack</a>
             </div>
         </div>
+
+        <div class="py-5" style="border-top: 1px solid #333;">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="position-relative p-4">
+                            <span class="layer-number">02</span>
+                            <div class="feature-icon-box bg-info bg-opacity-10"><i class="bi bi-server fs-2 text-info"></i></div>
+                            <h2 class="fw-bold text-white">Industrial Edge Compute</h2>
+                            <h5 class="text-info mb-3">MDF Hyperconverged Infrastructure</h5>
+                            <p class="text-light" style="opacity: 0.9;">Low latency and data sovereignty are critical. We deploy a private compute cluster directly to your MDF to host the intelligence stack at the edge.</p>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-info me-3"></i> <div class="text-light"><strong>Data Sovereignty:</strong> Critical security logs and access policies are stored locally, not in the public cloud.</div></li>
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-info me-3"></i> <div class="text-light"><strong>High Availability:</strong> A 3-node cluster ensures that if one server fails, your security operations continue without a blip.</div></li>
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-info me-3"></i> <div class="text-light"><strong>Air-Gap Ready:</strong> Designed to operate fully autonomously even if the internet connection is severed.</div></li>
+                            </ul>
+                            <div class="mt-4">
+                                <span class="tech-pill">Hyperconverged Infrastructure</span>
+                                <span class="tech-pill">Private Cloud Compute</span>
+                                <span class="tech-pill">Immutable Data Backup</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card card-dark border-info p-1 overflow-hidden" style="height: 350px;">
+                            <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?q=80&w=800&auto=format&fit=crop" alt="Edge Server Rack" style="object-fit: cover; height: 100%; width: 100%; opacity: 0.9;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-5" style="background-color: #151920; border-top: 1px solid #333;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="position-relative p-4">
+                            <span class="layer-number">03</span>
+                            <div class="feature-icon-box bg-success bg-opacity-10"><i class="bi bi-shield-check fs-2 text-success"></i></div>
+                            <h2 class="fw-bold text-white">The Security Fabric</h2>
+                            <h5 class="text-success mb-3">Identity & Threat Detection</h5>
+                            <p class="text-light" style="opacity: 0.9;">We move beyond "Air Gaps" (which rarely work) to a modern Zero-Trust architecture that assumes the network is already breached.</p>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-success me-3"></i> <div class="text-light"><strong>Micro-Segmentation:</strong> We create virtual walls around every machine. A corrupted HMI cannot infect the PLC next to it.</div></li>
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-success me-3"></i> <div class="text-light"><strong>Behavioral Analytics:</strong> AI that learns "normal" traffic. If a thermostat starts scanning the network, we kill the port instantly.</div></li>
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-success me-3"></i> <div class="text-light"><strong>Identity Services:</strong> Every device must prove who it is (MAB/802.1X) before sending a single packet.</div></li>
+                            </ul>
+                            <div class="mt-4">
+                                <span class="tech-pill">Zero-Trust NAC</span>
+                                <span class="tech-pill">Traffic Analysis</span>
+                                <span class="tech-pill">Compliance Reporting</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card card-dark border-success p-1 overflow-hidden" style="height: 350px;">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop" alt="Cyber Security" style="object-fit: cover; height: 100%; width: 100%; opacity: 0.8;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-5" style="border-top: 1px solid #333;">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="position-relative p-4">
+                            <span class="layer-number">04</span>
+                            <div class="feature-icon-box bg-danger bg-opacity-10"><i class="bi bi-eye fs-2 text-danger"></i></div>
+                            <h2 class="fw-bold text-white">Operational Visibility</h2>
+                            <h5 class="text-danger mb-3">The "Single Pane of Glass"</h5>
+                            <p class="text-light" style="opacity: 0.9;">Security tools are useless if Operations can't understand them. We translate complex network data into a language Plant Managers speak.</p>
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-danger me-3"></i> <div class="text-light"><strong>Asset Discovery:</strong> Automatically map every PLC, Drive, and IO Block. No more manual spreadsheets.</div></li>
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-danger me-3"></i> <div class="text-light"><strong>Vulnerability Matching:</strong> We correlate your exact hardware firmware against known CVEs to prioritize patching.</div></li>
+                                <li class="mb-3 d-flex"><i class="bi bi-check-circle-fill text-danger me-3"></i> <div class="text-light"><strong>Process Context:</strong> See network flows in the context of the production line (e.g., "Line 1 / Mixing / PLC-04").</div></li>
+                            </ul>
+                            <div class="mt-4">
+                                <span class="tech-pill">Cisco Cyber Vision</span>
+                                <span class="tech-pill">IoT Operations Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card card-dark border-danger p-1 overflow-hidden" style="height: 350px;">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Dashboard" style="object-fit: cover; height: 100%; width: 100%; opacity: 0.9;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center py-5"><a href="pricing.html" class="btn btn-accent btn-lg">See How It's Packaged</a></div>
+
         
     <footer class="py-5 text-center text-white" style="background-color: #151920; margin-top: auto;">
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-md-8">
-                    <h5 class="fw-bold mb-3">Align your Security and Operations teams.</h5>
+                    <h5 class="fw-bold mb-3">Powered by Cisco Industrial Technology.</h5>
                     <a href="contact.html" class="btn btn-outline-light btn-sm">Start the Assessment</a>
                 </div>
             </div>
             <hr class="border-secondary" />
-            
             <div class="d-flex justify-content-center align-items-center mb-3">
                 <span class="fw-bold me-3">Factory Fuzion</span>
                 <span class="mx-2 text-secondary">|</span>
                 <img src="assets/ciscologo.png" alt="Cisco Partner" style="height: 40px; width: auto;">
             </div>
-            
-            <p class="mb-0 text-secondary">&copy; 2026 Factory Fuzion. Built for Industrial Intelligence.</p>
+            <p class="mb-0 text-secondary">&copy; 2026 Factory Fuzion. Managed Industrial Intelligence.</p>
         </div>
     </footer>
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-    </html>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body></html>
