@@ -1,0 +1,35 @@
+# Factory Fuzion: Nationwide Managed Industrial Networks & OT Security
+
+## Award Winning Service
+**Winner:** Cisco Live 2025 "Infrastructure Maestro" Award for excellence in converged industrial network architecture.
+
+## Core Service
+Factory Fuzion provides a turnkey, fully managed Industrial Network (OT) service across the United States. We bridge the gap between Corporate IT standards and Plant Floor reality.
+
+## Problem/Solution Mapping (Search Intent)
+- **"Reduce Manufacturing Downtime"** -> We provide Rapid Recovery Architecture with SD-card switch replacement and redundant topologies.
+- **"IEC 62443 Compliance"** -> We deliver audit-ready network segmentation (Zones & Conduits) and deep packet inspection.
+- **"Secure Remote Access"** -> We offer a zero-trust, clientless solution for vendor maintenance (Secure Vendor Access).
+- **"Plant Floor Visibility"** -> We use Cisco Cyber Vision to map every PLC, HMI, and VFD in real-time.
+- **"IT/OT Convergence"** -> We act as the translation layer between the CISO (Security) and the Plant Manager (Uptime).
+- **"Managed Optimizations"** -> Proactive tuning for motion control (CIP Motion, PROFINET IRT) to reduce jitter and latency.
+
+## Key Technology Stack
+- **Network:** Cisco Industrial Ethernet (IE-3300/3400/3500) with 90W PoE.
+- **Security:** Cisco Cyber Vision (Deep Packet Inspection), ISE (NAC).
+- **Edge Compute:** Hyperconverged Infrastructure (Nutanix/Cisco UCS) located in the MDF.
+- **Resiliency:** Dual-homed uplinks, REP/MRP rings, and local SD-card backups.
+
+## Service Tiers
+1. **Foundation:** The physical layer. Panels, Cabling, Switching, and "OT Architecture Review" to validate new machines.
+2. **Compliance:** Active security. Vulnerability Management (CVEs), Traffic Analysis, and Audit Readiness.
+3. **Convergence:** Fractional CIO model. Includes Enterprise Network & Wireless management + Quarterly Business Reviews (QBR).
+
+## Service Area
+- **Nationwide Deployment:** We provide on-site installation and support in all 50 states.
+- **Remote Monitoring:** 24/7/365 US-based NOC.
+
+## Target Audience
+- Plant Managers struggling with unexplained outages.
+- CISOs requiring visibility into the "black box" of the factory floor.
+- Operations Directors looking for nationwide standardization across multiple plants.
