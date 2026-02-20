@@ -1,81 +1,51 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+    <html>
+    
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Contact | Factory Fuzion</title>
-        <meta name="title" content="Contact | Factory Fuzion">
-        <meta name="description" content="Get a quote.">
-        
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.factoryfuzion.com">
-        <meta property="og:title" content="Contact | Factory Fuzion">
-        <meta property="og:description" content="Get a quote.">
-        <meta property="og:image" content="https://www.factoryfuzion.com/assets/hero-social.jpg">
-
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://www.factoryfuzion.com">
-        <meta property="twitter:title" content="Contact | Factory Fuzion">
-        <meta property="twitter:description" content="Get a quote.">
-        <meta property="twitter:image" content="https://www.factoryfuzion.com/assets/hero-social.jpg">
-
-        <link rel="help" href="/llms.txt" type="text/markdown" title="AI Context">
-        
-        <script type="application/ld+json">
-        {"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Factory Fuzion", "url": "https://www.factoryfuzion.com", "logo": "https://www.factoryfuzion.com/assets/logo.png", "description": "Get a quote.", "address": {"@type": "PostalAddress", "addressCountry": "US"}, "award": "Cisco Live 2025 Infrastructure Maestro (Architect)", "makesOffer": [{"@type": "Offer", "name": "Managed Industrial Switching"}, {"@type": "Offer", "name": "OT Security Assessment"}, {"@type": "Offer", "name": "IEC 62443 Compliance Consulting"}]}
-        </script>
-
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assessment | Factory Fuzion</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
         <style>
-            body { background-color: #1e232d; color: #ffffff; display: flex; flex-direction: column; min-height: 100vh; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-            h1, h2, h3, h4 { letter-spacing: -0.5px; }
+            body { background-color: #1e232d; color: #ffffff; display: flex; flex-direction: column; min-height: 100vh; font-family: 'Segoe UI', sans-serif; }
             .btn-accent { background-color: #ff8c00; color: white; border: none; font-weight: bold; padding: 12px 30px; border-radius: 4px; transition: 0.2s; }
-            .btn-accent:hover { background-color: #e07b00; color: white; transform: translateY(-2px); }
-            .card-dark { background-color: #2c3440; border: 1px solid #444; color: white; transition: transform 0.2s; }
-            .card-dark:hover { transform: translateY(-5px); border-color: #ff8c00; }
-            .hero-section {
-                background: linear-gradient(rgba(30,35,45,0.92), rgba(30,35,45,0.85)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000');
-                background-size: cover;
-                background-position: center;
-                padding: 140px 0;
-            }
-            .persona-card { border-left: 4px solid #555; height: 100%; padding: 20px; background: rgba(0,0,0,0.2); }
-            .persona-card:hover { background: rgba(0,0,0,0.4); }
-            .check-list li { margin-bottom: 10px; display: flex; align-items: start; }
-            .check-list i { color: #ff8c00; margin-right: 10px; margin-top: 3px; }
-            .feature-icon-box { width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 12px; margin-bottom: 20px; }
-            .tech-pill { background-color: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; margin-right: 5px; margin-bottom: 5px; display: inline-block; }
-            .layer-number { font-size: 5rem; font-weight: 900; opacity: 0.1; line-height: 1; position: absolute; top: -20px; left: 10px; }
-            .award-badge { background: rgba(255, 215, 0, 0.1); border: 1px solid #FFD700; color: #FFD700; font-size: 0.85rem; border-radius: 50px; padding: 8px 20px; display: inline-flex; align-items: center; }
-            
-            /* TABS STYLING */
-            .nav-tabs { border-bottom: 1px solid #444; }
-            .nav-tabs .nav-link { color: #999; border: none; border-bottom: 3px solid transparent; padding: 15px 25px; font-weight: bold; transition: all 0.3s; }
-            .nav-tabs .nav-link:hover { color: #fff; background-color: rgba(255,255,255,0.05); }
-            .nav-tabs .nav-link.active { background-color: transparent; color: #ff8c00; border-bottom: 3px solid #ff8c00; }
-            .tab-pane { padding-top: 30px; animation: fadeIn 0.5s; }
-            @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+            .btn-accent:hover { background-color: #e07b00; transform: translateY(-2px); }
+            .card-dark { background-color: #2c3440; border: 1px solid #444; color: white; transition: 0.3s; }
+            .card-dark:hover { border-color: #ff8c00; }
+            .hero-section { background: linear-gradient(rgba(30,35,45,0.92), rgba(30,35,45,0.85)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000'); background-size: cover; background-position: center; padding: 120px 0; border-bottom: 3px solid #ff8c00; }
+            .downtime-section { background: linear-gradient(rgba(22,26,33,0.85), rgba(22,26,33,0.95)), url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200'); background-size: cover; background-position: center; background-attachment: fixed; padding: 80px 0; }
+            .section-darker { background-color: #161a21; padding: 80px 0; }
+            .nav-tabs .nav-link { color: #999; border: none; font-weight: bold; padding: 10px 20px; transition: 0.3s; font-size: 1.1rem; }
+            .nav-tabs .nav-link.active { color: #ff8c00; border-bottom: 3px solid #ff8c00; background: transparent; }
+            .text-readable { color: #f8f9fa !important; line-height: 1.6; font-size: 0.95rem; }
+            .check-list-item { font-size: 0.95rem; margin-bottom: 12px; display: flex; align-items: start; color: #f8f9fa; }
+            .check-list-item i { color: #ff8c00; margin-right: 12px; margin-top: 4px; }
+            .dashboard-img { width: 100%; border-radius: 8px; border: 1px solid #444; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+            .addon-card { background: rgba(255,255,255,0.03); border: 1px solid #444; border-radius: 8px; padding: 25px; height: 100%; transition: 0.3s; }
+            .addon-card:hover { border-color: #ff8c00; background: rgba(255,140,0,0.05); }
+            footer { border-top: 1px solid #444; padding: 50px 0; background: #0f1217; text-align: center; color: #777; }
+            .stat-highlight { color: #ff8c00; font-weight: 900; font-size: 2.2rem; display: block; margin: 10px 0; text-shadow: 0 2px 10px rgba(255,140,0,0.3); }
+            .object-fit-cover { object-fit: cover; }
         </style>
     </head>
+    
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1e232d; border-bottom: 3px solid #ff8c00;">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1e232d; border-bottom: 1px solid #444; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
             <div class="container">
-                <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-                    <img src="assets/logo.png" alt="Factory Fuzion" style="height: 50px; width: auto;" onerror="this.style.display='none'">
-                    <span class="d-none d-lg-block ms-2">Factory Fuzion</span>
-                    <div class="mx-3" style="border-left: 1px solid rgba(255,255,255,0.3); height: 35px;"></div>
-                    <img src="assets/ciscologo.png" alt="Cisco Industrial Partner" style="height: 50px; width: auto;">
+                <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="index.html">
+                    <img src="assets/logo.png" alt="Factory Fuzion" height="40" class="me-2" onerror="this.src='https://placehold.co/150x40/1e232d/ff8c00?text=FF+Logo'">
+                    Factory Fuzion
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link " href="features.html">The Platform</a></li>
+                        <li class="nav-item"><a class="nav-link " href="features.html">Platform</a></li>
                         <li class="nav-item"><a class="nav-link " href="pricing.html">Services</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contact.html">Assessment</a></li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="btn btn-accent px-4 py-2 shadow-sm" href="contact.html">Request Assessment</a></li>
                     </ul>
                 </div>
             </div>
@@ -83,44 +53,40 @@
         
         <div class="container py-5">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card card-dark p-5 shadow-lg">
-                        <h2 class="text-center mb-4">Start Your Architecture Review</h2>
-                        <p class="text-center text-secondary mb-4">Tell us about your facility. We speak Controls, IT, and Procurement.</p>
+                <div class="col-lg-8 text-center mb-5">
+                    <h1 class="fw-bold">Securing Your Production Starts Today</h1>
+                    <p class="lead text-secondary">Schedule a comprehensive review of your industrial network infrastructure.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-dark p-4 shadow-lg border-warning">
+                        <h4 class="fw-bold text-white mb-3">Assessment Focus Areas:</h4>
+                        <ul class="list-unstyled mb-4">
+                            <li class="check-list-item"><i class="bi bi-check-circle-fill"></i> <span><strong>Asset Visibility:</strong> Strategies to map hidden devices and legacy equipment.</span></li>
+                            <li class="check-list-item"><i class="bi bi-check-circle-fill"></i> <span><strong>Threat Exposure:</strong> Identifying vulnerabilities without scanning production PLCs.</span></li>
+                            <li class="check-list-item"><i class="bi bi-check-circle-fill"></i> <span><strong>Infrastructure Readiness:</strong> Evaluating your backbone for Industry 4.0 / MES integration.</span></li>
+                        </ul>
+                        <hr class="border-secondary mb-4">
                         <form action="https://formspree.io/f/meeeoanr" method="POST">
-                            <div class="mb-3"><label class="form-label">Name</label><input type="text" name="name" class="form-control bg-dark text-light border-secondary" required></div>
-                            <div class="mb-3"><label class="form-label">Email</label><input type="email" name="email" class="form-control bg-dark text-light border-secondary" required></div>
-                            <div class="mb-3"><label class="form-label">Role</label>
-                                <select name="role" class="form-select bg-dark text-light border-secondary">
-                                    <option>Controls Engineer / OT</option>
-                                    <option>IT / Network Admin</option>
-                                    <option>Plant Management</option>
-                                    <option>System Integrator</option>
-                                </select>
-                            </div>
-                            <div class="mb-3"><label class="form-label">Requirement</label><textarea name="message" class="form-control bg-dark text-light border-secondary" rows="3"></textarea></div>
-                            <button type="submit" class="btn btn-accent w-100 btn-lg">Submit Request</button>
+                            <div class="mb-3"><label class="form-label text-secondary small fw-bold">Name</label><input type="text" name="name" class="form-control bg-dark text-white border-secondary" required></div>
+                            <div class="mb-3"><label class="form-label text-secondary small fw-bold">Title</label><input type="text" name="title" class="form-control bg-dark text-white border-secondary" required></div>
+                            <div class="mb-3"><label class="form-label text-secondary small fw-bold">Phone Number</label><input type="tel" name="phone" class="form-control bg-dark text-white border-secondary" required></div>
+                            <div class="mb-4"><label class="form-label text-secondary small fw-bold">Facility Email</label><input type="email" name="email" class="form-control bg-dark text-white border-secondary" required></div>
+                            <button type="submit" class="btn btn-accent w-100 btn-lg shadow">Request Assessment</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
         
-    <footer class="py-5 text-center text-white" style="background-color: #151920; margin-top: auto;">
-        <div class="container">
-            <div class="row justify-content-center mb-4">
-                <div class="col-md-8">
-                    <h5 class="fw-bold mb-3">Built by Engineers, For Engineers.</h5>
-                    <div class="d-inline-block bg-dark border border-secondary text-light rounded px-3 py-2 mb-3 small">
-                        <i class="bi bi-person-badge-fill text-warning me-2"></i>
-                        Led by the Architect of the <strong>Cisco Live "Infrastructure Maestro" Award</strong> (2025)
-                    </div>
-                    <br>
-                    <a href="contact.html" class="btn btn-outline-light btn-sm">Start a Conversation</a>
+        <footer>
+            <div class="container">
+                <div class="mb-4">
+                    <img src="assets/ciscologo.png" alt="Cisco Partner" height="60" onerror="this.src='https://placehold.co/150x60/0f1217/777?text=Cisco+Partner'">
                 </div>
+                <p class="mb-1 fw-bold text-white">Factory Fuzion</p>
+                <p class="small text-secondary mb-0">The Industrial Intelligence Platform &copy; 2026</p>
             </div>
-            <hr class="border-secondary" />
-            <p class="mb-0 text-secondary">&copy; 2026 Factory Fuzion. | SOC 2 Type 2 Managed Infrastructure | IEC 62443 Compliant Design</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body></html>
+        </footer>
+        
+    </body>
+    </html>
