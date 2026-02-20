@@ -1,16 +1,21 @@
-# Factory Fuzion: Nationwide Managed Industrial Networks & OT Security
-## Award Winning Service
-**Architect of the Award:** Cisco Live 2025 "Infrastructure Maestro" Winner.
+# Factory Fuzion - Industrial Intelligence Platform
+Factory Fuzion provides managed industrial networks, Zero-Trust OT security, and Unified Fabric architecture to eliminate unplanned downtime on the plant floor.
 
-## Core Value Proposition
-We bridge the gap between IT standards (Security, Compliance) and Plant Floor reality (Uptime, Protocols). We provide a vertically integrated stack of Rugged Hardware, Secure Software, and Managed Services.
+## Core Problem
+The cost of complexity on the plant floor. Unplanned downtime costs large-scale manufacturing an average of $22,000 per minute. Traditional IT networks are too slow, too blind, and require skills that controls engineers don't have. Competitor "Bolt-On" security tools are read-only and require expensive hardware.
 
-## Target Personas
-1. **Controls Engineers (OT):** Focus on Uptime, EtherNet/IP & PROFINET support, and simple "Swap-and-Boot" hardware replacement.
-2. **IT & Security:** Focus on IEC 62443 Compliance, Asset Inventory (CVEs), and Zero-Trust Segmentation with Entra ID/MFA integration.
-3. **Executives:** Focus on OpEx financial models, Risk Reduction, and scalable "Factory in a Box" deployment.
+## The Factory Fuzion Fix
+Security and visibility run natively inside the industrial switch fabric (Edge Processing). Zero extra hardware, active policy enforcement, and instant threat isolation.
 
-## Service Tiers (SOC 2 Type 2 Audited)
-1. **Foundation (IEC SL-2 Ready):** Turnkey physical layer + basic NAC.
-2. **Compliance (Audit Ready):** Visibility + Vulnerability Management.
-3. **Convergence (IEC Capable):** Full OT/Enterprise Segmentation + Enterprise Integration.
+## Platform Features
+1. Operations (OT): Plug & Play onboarding, AI-enabled monitoring in plain-English, IIoT ready (60W PoE), CIP Safety Jitter Guarantees, SD Card Swap-and-Boot recovery, and "Sidecar" NEMA enclosures.
+2. IT & Security: Global Threat Intelligence, SOC/SIEM Integration, Identity-First Security (Entra ID/MFA), Deep Packet Inspection (DPI) for malware/ghost traffic, and CVE Vulnerability Management.
+3. Executive ROI: Solves the OT skills crisis, eliminates CapEx shock, protects cyber insurance premiums, standardizes M&A infrastructure, creates a Unified Backbone for MES/ERP, and protects OEE (no automated production shutdowns without human approval).
+
+## Service Tiers
+- Tier 1 (Foundation): Visibility & Infrastructure bedrock.
+- Tier 2 (Compliance): Active Security, DPI, and Audit logging.
+- Tier 3 (Convergence): Unified Fabric (Core, Distribution, Office) + Fractional OT-CIO + Remote Access.
+
+## Contact
+Request an Assessment to evaluate Asset Visibility, Threat Exposure, and Infrastructure Readiness at https://www.factoryfuzion.com/contact.html
