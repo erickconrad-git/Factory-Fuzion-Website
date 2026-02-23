@@ -32,8 +32,12 @@
             .addon-card { background: rgba(255,255,255,0.03); border: 1px solid #444; border-radius: 8px; padding: 25px; height: 100%; transition: 0.3s; }
             .addon-card:hover { border-color: #ff8c00; background: rgba(255,140,0,0.05); }
             footer { border-top: 1px solid #444; padding: 50px 0; background: #0f1217; text-align: center; color: #777; }
-            .stat-highlight { color: #ff8c00; font-weight: 900; font-size: 2.2rem; display: block; margin: 10px 0; text-shadow: 0 2px 10px rgba(255,140,0,0.3); }
+            .stat-highlight { color: #ff8c00; font-weight: 900; font-size: 2.2rem; display: inline-block; margin: 0 5px; text-shadow: 0 2px 10px rgba(255,140,0,0.3); }
             .object-fit-cover { object-fit: cover; }
+            
+            /* Calculator specific styling */
+            .calc-input { background-color: #1e232d !important; color: #fff !important; border: 1px solid #555 !important; text-align: center; font-size: 1.2rem; font-weight: bold; }
+            .calc-input:focus { border-color: #ff8c00 !important; box-shadow: 0 0 0 0.25rem rgba(255, 140, 0, 0.25) !important; }
         </style>
     </head>
     
@@ -44,7 +48,6 @@
                 <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="index.html">
                     <img src="assets/logo.png" alt="Factory Fuzion" height="45" style="width: auto;" class="me-3" onerror="this.src='https://placehold.co/150x45/1e232d/ff8c00?text=FF+Logo'">
                     <span class="me-4">Factory Fuzion</span>
-                    
                     <div class="d-none d-lg-block border-start border-secondary ps-4 ms-2 h-100 d-flex align-items-center">
                         <img src="assets/ciscologo.png" alt="Cisco Partner" height="55" style="width: auto;" onerror="this.src='https://placehold.co/120x55/1e232d/777?text=Cisco'">
                     </div>
@@ -75,14 +78,57 @@
             </div>
         </div>
         
-        <div class="downtime-section border-bottom border-secondary">
+        <div class="downtime-section border-bottom border-secondary pb-5">
             <div class="container text-center">
                 <h2 class="fw-bold mb-3 text-white">The Price of Silence</h2>
-                <p class="lead text-readable mx-auto mb-0" style="max-width: 750px;">
-                    Unplanned downtime is a financial hemorrhage. The average cost of an outage in large-scale manufacturing is 
-                    <span class="stat-highlight">$22,000 per minute</span> 
-                    If our platform prevents just ONE major routing loop, broadcast storm, or security incident, it pays for itself 10x over.
+                <p class="lead text-readable mx-auto mb-5" style="max-width: 850px;">
+                    Unplanned downtime has a severe financial impact. The industry average cost of an outage in large-scale manufacturing is <span class="stat-highlight">$22,000</span> per minute. See exactly what legacy IT complexity is costing your facility below.
                 </p>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <div class="card card-dark p-4 shadow-lg border-warning text-start">
+                            <h4 class="fw-bold mb-4 text-center">True Cost of Downtime Calculator</h4>
+                            
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-4">
+                                    <label class="form-label text-secondary fw-bold small text-center w-100">Cost Per Minute ($)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-dark border-secondary text-secondary">$</span>
+                                        <input type="number" id="calcCost" class="form-control calc-input" value="22000" min="0">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label text-secondary fw-bold small text-center w-100">Average Duration (Min)</label>
+                                    <div class="input-group">
+                                        <input type="number" id="calcTime" class="form-control calc-input" value="45" min="0">
+                                        <span class="input-group-text bg-dark border-secondary text-secondary"><i class="bi bi-clock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label text-secondary fw-bold small text-center w-100">Outages Per Year</label>
+                                    <div class="input-group">
+                                        <input type="number" id="calcEvents" class="form-control calc-input" value="2" min="0">
+                                        <span class="input-group-text bg-dark border-secondary text-secondary"><i class="bi bi-exclamation-triangle"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr class="border-secondary opacity-50 mb-4">
+                            
+                            <div class="row text-center">
+                                <div class="col-sm-6 border-end border-secondary mb-3 mb-sm-0">
+                                    <p class="text-secondary small fw-bold mb-1 text-uppercase tracking-widest">Cost Per Outage</p>
+                                    <h2 class="text-warning fw-bold mb-0" id="outResultOutage">$990,000</h2>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="text-secondary small fw-bold mb-1 text-uppercase tracking-widest">Annual Revenue Impact</p>
+                                    <h2 class="text-danger fw-bold mb-0" id="outResultAnnual">$1,980,000</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -143,5 +189,25 @@
             </div>
         </footer>
         
+
+        <script>
+            function calculateROI() {
+                const cost = parseFloat(document.getElementById('calcCost').value) || 0;
+                const time = parseFloat(document.getElementById('calcTime').value) || 0;
+                const events = parseFloat(document.getElementById('calcEvents').value) || 0;
+                
+                const outageCost = cost * time;
+                const annualCost = outageCost * events;
+                
+                const formatter = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+                
+                document.getElementById('outResultOutage').innerText = formatter.format(outageCost);
+                document.getElementById('outResultAnnual').innerText = formatter.format(annualCost);
+            }
+
+            document.getElementById('calcCost').addEventListener('input', calculateROI);
+            document.getElementById('calcTime').addEventListener('input', calculateROI);
+            document.getElementById('calcEvents').addEventListener('input', calculateROI);
+        </script>
     </body>
     </html>

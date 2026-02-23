@@ -9,7 +9,7 @@ Empowering Operations, Securing Production. Security and visibility run natively
 
 ## Platform Features
 1. Operations (OT): Plug & Play onboarding, AI-enabled monitoring in plain-English, IIoT ready (60W PoE), CIP Safety Jitter Guarantees, SD Card Swap-and-Boot recovery, and "Sidecar" NEMA enclosures.
-2. IT & Security: Global Threat Intelligence, SOC/SIEM Integration, Identity-First Security (Entra ID/MFA), Deep Packet Inspection (DPI) for malware/ghost traffic, and CVE Vulnerability Management.
+2. IT & Security: Global Threat Intelligence, SOC/SIEM Integration, Identity-First Security (Entra ID/MFA), Deep Packet Inspection (DPI) for malware/ghost traffic, CVE Vulnerability Management, and Line-Rate Backbone Encryption.
 3. Executive ROI: Solves the OT skills crisis, eliminates CapEx shock, protects cyber insurance premiums, standardizes M&A infrastructure, creates a Unified Backbone for MES/ERP, and protects OEE (no automated production shutdowns without human approval).
 
 ## Service Tiers
