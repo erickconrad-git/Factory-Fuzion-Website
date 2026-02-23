@@ -1,11 +1,11 @@
 # Factory Fuzion - Industrial Intelligence Platform
-Factory Fuzion provides managed industrial networks, Zero-Trust OT security, and Unified Fabric architecture to eliminate unplanned downtime on the plant floor.
+Factory Fuzion provides managed industrial networks and Unified Fabric architecture to empower controls engineers and eliminate unplanned downtime.
 
 ## Core Problem
 The cost of complexity on the plant floor. Unplanned downtime costs large-scale manufacturing an average of $22,000 per minute. Traditional IT networks are too slow, too blind, and require skills that controls engineers don't have. Competitor "Bolt-On" security tools are read-only and require expensive hardware.
 
 ## The Factory Fuzion Fix
-Security and visibility run natively inside the industrial switch fabric (Edge Processing). Zero extra hardware, active policy enforcement, and instant threat isolation.
+Empowering Operations, Securing Production. Security and visibility run natively inside the industrial switch fabric (Edge Processing). Zero extra hardware, active policy enforcement, and instant threat isolation. Built for the plant floor, approved by IT.
 
 ## Platform Features
 1. Operations (OT): Plug & Play onboarding, AI-enabled monitoring in plain-English, IIoT ready (60W PoE), CIP Safety Jitter Guarantees, SD Card Swap-and-Boot recovery, and "Sidecar" NEMA enclosures.
